@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Caveat Brush', cursive;
+    /*    font-family: 'Sacramento', cursive;*/
+
+}
+
+
+main {
+    width: 800px;
+    position: relative;
+    margin: 0 auto;
+
+
+}
+
+.main1 {
+
+    background: url(snow.png) no-repeat fixed,
+        linear-gradient(to top, rgb(80, 128, 177), rgba(0, 78, 140, 0)) fixed;
+    animation: dnk1 30s linear infinite;
+
+}
+
+main .wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 10%;
+    transition: 2s .1s;
+    background: rgba(172, 158, 158, 0.58),
+        linear-gradient(to top, #2786e6, #004e8c) fixed;
+    ;
+    border: 2px solid #2f00ff;
+
+}
+
+main .wrapper .foto {
+    width: 200px;
+    height: 0px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: rgb(132, 132, 132);
+    background: url(ich.jpg);
+    background-size: 200px;
+    overflow: hidden;
+    opacity: 0;
+    transition: 2s .1s;
+
+}
+
+main .wrapper .grat {
+    height: 0px;
+    opacity: 0;
+    padding-top: 10px;
+
+    background: rgba(255, 255, 255, 0.74);
+
+    transition: 1s .1s;
+    ;
+
+}
+
+main .wrapper .grat span {
+    color: #e82525
+}
+
+main .wrapper .grat p {
+    text-align: center;
+    font-size: 32px;
+    color: rgb(46, 0, 201);
+
+
+}
+
+main .wrapper .dnk {
+    text-align: center;
+    font-size: 18px;
+    width: 400px;
+
+}
+
+main .wrapper .dnk p {
+    background-color: rgb(99, 41, 206);
+    display: inline-block;
+    border: 1px solid rgb(35, 63, 217);
+    box-shadow: 2px 2px #24d3cc;
+    animation: dnk 2.2s infinite;
+
+
+}
+
+main .wrapper .dnk a {
+    text-decoration: none;
+    color: beige;
+    font-size: 30px;
+}
+
+main:hover .wrapper .grat {
+    height: 300px;
+    opacity: 100;
+
+
+}
+
+main:hover .wrapper .foto {
+    height: 200px;
+    opacity: 100;
+}
+
+main:hover .wrapper {
+    transform: translate3d(200px, 0, 0px);
+
+
+}
+
+.ww {
+    position: absolute;
+    width: 700px;
+    height: 300px;
+    background: url(salut.gif);
+    background-size: cover;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    opacity: 110;
+    opacity: 0;
+    transition: 1s 2s;
+    display: none;
+}
+
+main:hover .ww {
+    opacity: 100;
+    left: -400px;
+    top: 150px;
+    display: block;
+}
+
+@keyframes dnk {
+    0% {
+        transform: translate3d(0 0 0);
+
+    }
+
+    30% {
+        transform: translate3d(15px, 20px, 30px);
+
+    }
+
+    50% {
+        transform: translate3d(-350px, -200px, -300px);
+        transform: rotate(30deg);
+
+    }
+
+    70% {
+        transform: translate3d(15px, 10px, -30px);
+        transform: rotate(-30deg);
+
+    }
+
+    100% {
+        transform: translate3d(-15px, 35px, -35px);
+
+    }
+}
+
+@keyframes dnk1 {
+    from {
+        background-position: -1000px 150%, 10% 30%, 120% 15%, 0 0;
+    }
+
+    to {
+        background-position: 0 10%, 200% 10%, 50% 15%, 0 0;
+    }
+}
