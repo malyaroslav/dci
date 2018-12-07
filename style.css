@@ -24,8 +24,9 @@ main {
 .main1 {
 
     background: url(snow.png) no-repeat fixed,
-        linear-gradient(to top, rgb(80, 128, 177), rgba(0, 78, 140, 0)) fixed;
+        linear-gradient(to top, rgba(111, 19, 217, 0.67), rgba(0, 78, 140, 0)) fixed;
     animation: dnk1 30s linear infinite;
+    border: none;
 
 }
 
